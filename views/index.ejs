@@ -4,36 +4,60 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!--<script src="js/main.js"></script>-->
 
         <title>Miguel Andrade</title>
     </head>
 
-    <body>
+    <body> 
 
-    	<section id="cover">    		
-		    <img src="img/cover_photo.png" alt="Hello World">
-    		<div id="navbar">
-    			<ul>
-    				<li>Contacts</li>
-    				<li>Portfolio</li>
-    				<li>About</li>
-    			</ul>
-    		</div>
-    		<div id="HelloWorld">
-    			<h1>
-    				&#60;Hello World/&#62;    	
-    			</h1>    						
-    			<h2>
-    				{ I'm Miguel Andrade }
-    			</h2>
-    			<h3>
-    				{ Software Engineer }
-    			</h3>
-    		</div>
-    		<!--<div id="fade"></div>-->
-    	</section>
-    	
+        <section id="follow-scroll">
+            <ul class="nav flex-column">
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link active" href="#">01</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#">02</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#">03</a>
+                </li>
+                <li class="nav-item custom-nav-item">
+                    <a class="nav-link" href="#">04</a>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="cover">
+            <img src="img/cover_photo.png" alt="Cover Photo">
+            <nav id="custom-navbar" class="navbar navbar-expand-lg uppercase">          
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#">Contacts</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron custom-jumbotron">
+                <h1 class="display-2">&#60;Hello World/&#62;</h1>
+                <p class="lead custom-lead">&#123; "I'm Miguel Andrade" &#125;</p>                
+                <p class="uppercase">( 'Software Engineer' )</p>
+            </div>
+            <div id="social-media">
+                <a href="#"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
+                <a href="https://github.com/miguel1996/" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
+            </div>
+    		<!--
+                <div class="json-mockup">
+                    <p class="lead">&#123;<br>&emsp;"Name": "Miguel Andrade",<br>&emsp;"Career": "Software Engineer"<br>&#125;</p>
+                </div>
+    		-->
+    	</section>        
+
     </body>
 </html>

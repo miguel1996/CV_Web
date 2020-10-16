@@ -1,35 +1,61 @@
 body {
 	background-color: #000000;
-	color: #ffffff;
+	background-repeat: no-repeat;
 	overflow-x: hidden;
-	font-family: "Montserrat";	
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2pt;
-	margin: 10vh 10vh 0vh 10vh;
+	margin: 7.5vh 11vh 0vh 11vh;
 }
 
-#HelloWorld h1, h2, h3{
-	text-align: right;
+body, a{
+	color: #ffffff;
 }
 
-#HelloWorld h2, h3{
-	margin: 4vh 0vh 4vh 4vh;
+h1{
+	font-weight: 700 !important;
 }
 
-#HelloWorld h1{
-	font-size: 70pt;
-	margin-top: 30vh;
-	margin-bottom: 0vh;
-}
-
-#HelloWorld h2{
-	font-size: 25pt;
-}
-
-#HelloWorld h3{
+p{
+	margin-top: 2vh;
 	font-size: 15pt;
+	font-weight: 100;
 }
 
-#cover img{
+.uppercase{
+	text-transform: uppercase;
+}
+
+.custom-jumbotron{
+	padding-top: 30vh;
+	background: transparent;
+	text-align: right;
+	width: 50vw;
+}
+
+#custom-navbar{
+	float: right;
+	font-weight: 600;
+}
+
+#custom-navbar a{
+	margin-left: 12vh;
+}
+
+.custom-lead{
+	font-size:25pt;
+	font-weight: 500;
+}
+
+.json-mockup{
+	float:right;
+	text-align: left;
+}
+
+.custom-nav-item{
+	margin-top: 5vh;
+}
+
+#cover > img{
 	width: 100vw;
 	position: absolute;
 	top: 0px;
@@ -37,25 +63,22 @@ body {
 	z-index: -1000;
 }
 
-#HelloWorld{
-
-	width: 55%;
+#follow-scroll{
+	position: fixed;
+    top: 23vh;
+    font-weight: 500;
+    font-size: 15pt;
 }
 
-#navbar ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	z-index: 1000;
+.icon{
+	height: 5vh;
+	display:block;
+	margin-bottom: 3.5vh;
 }
 
-#navbar ul li{
-	float: right;
-	padding-left: 100px;
-	font-size: 12pt;
-	text-transform: uppercase;	
-	font-weight: 1000;
+#social-media{
+	float:right;
+	margin-top: 8vh;
 }
 
 #fade{
