@@ -4,7 +4,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2pt;
-	margin: 7.5vh 11vh 0vh 11vh;
+	margin: 7.5vh 6vw 7.5vh 7vw;
 }
 
 body, a{
@@ -15,21 +15,33 @@ h1{
 	font-weight: 700 !important;
 }
 
+h2{
+	font-size: 40pt;
+}
+
 p{
 	margin-top: 2vh;
 	font-size: 15pt;
 	font-weight: 100;
 }
 
+section{
+	height: 100vh;
+}
+
 .uppercase{
 	text-transform: uppercase;
 }
 
-.custom-jumbotron{
-	padding-top: 30vh;
+.custom-jumbotron{	
 	background: transparent;
-	text-align: right;
 	width: 50vw;
+	text-align: justify;
+}
+
+#cover .custom-jumbotron{
+	padding-top: 30vh;	
+	text-align: right;
 }
 
 #custom-navbar{
@@ -46,13 +58,30 @@ p{
 	font-weight: 500;
 }
 
-.json-mockup{
-	float:right;
-	text-align: left;
+.json-mockup-items{
+	margin-left:2vw;	
+}
+
+.json-mockup-bracket, .json-mockup p{	
+	font-weight: 500;
+	font-size: 1rem;
+	margin: 0.5vh;
+}
+
+.json-mockup-key{
+	color: #8A3F83 ;
+	color: #0056b3 !important;
+}
+
+.custom-nav{
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	border-width: thin;
 }
 
 .custom-nav-item{
-	margin-top: 5vh;
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
 }
 
 #cover > img{
@@ -65,9 +94,11 @@ p{
 
 #follow-scroll{
 	position: fixed;
-    top: 23vh;
+    top: 30vh;
+    left: 3.5vw;
     font-weight: 500;
     font-size: 15pt;
+    margin-right: 2vw;
 }
 
 .icon{
@@ -79,6 +110,19 @@ p{
 #social-media{
 	float:right;
 	margin-top: 8vh;
+}
+
+.flex-container{
+	display: flex;
+}
+
+.flex-child{
+	width:35vw;
+	flex: 1;
+}
+
+#graph-container{
+	margin-top: 12vh;
 }
 
 #fade{
