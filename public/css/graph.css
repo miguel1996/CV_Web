@@ -7,7 +7,6 @@ ul.timeline {
 }
 ul.timeline:before {
     content: ' ';
-    /*background: #d4d9df;*/
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -37,9 +36,5 @@ ul.timeline > li:before {
     z-index: 400;
 }
 ul .date{
-	/*text-decoration: underline;*/
-	/*border-bottom-color: #ffffff;
-	border-bottom-style: solid;
-	border-bottom-width: thin;*/
 	padding-right:2vw;
 }

@@ -3,7 +3,8 @@ body {
 	background-repeat: no-repeat;
 	overflow-x: hidden;
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2pt;
+	letter-spacing: 2pt;	
+	font-size: 15pt;
 	margin: 7.5vh 6vw 7.5vh 7vw;
 }
 
@@ -21,7 +22,6 @@ h2{
 
 p{
 	margin-top: 2vh;
-	font-size: 15pt;
 	font-weight: 100;
 	line-height: 1.6;
 }
@@ -38,12 +38,15 @@ path{
 	text-transform: uppercase;
 }
 
-.custom-jumbotron{	
+.half-jumbotron, .full-jumbotron{	
 	background: transparent;
+}
+
+.half-jumbotron{
 	width: 50vw;
 }
 
-#cover .custom-jumbotron{
+#cover .half-jumbotron{
 	padding-top: 30vh;	
 	text-align: right;
 }
@@ -60,10 +63,6 @@ path{
 .custom-lead{
 	font-size:25pt;
 	font-weight: 500;
-}
-
-.json-mockup{
-	
 }
 
 .json-mockup-items{
@@ -131,6 +130,14 @@ path{
 
 #graph-container{
 	margin-top: 13vh;
+}
+
+.custom-carousel{
+	margin-top: 8vh;
+}
+
+.custom-carousel img{
+	height: 70vh;
 }
 
 #fade{
