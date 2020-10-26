@@ -23,10 +23,15 @@ p{
 	margin-top: 2vh;
 	font-size: 15pt;
 	font-weight: 100;
+	line-height: 1.6;
 }
 
 section{
 	height: 100vh;
+}
+
+path{
+	stroke-width: 5;
 }
 
 .uppercase{
@@ -36,7 +41,6 @@ section{
 .custom-jumbotron{	
 	background: transparent;
 	width: 50vw;
-	text-align: justify;
 }
 
 #cover .custom-jumbotron{
@@ -58,19 +62,23 @@ section{
 	font-weight: 500;
 }
 
+.json-mockup{
+	
+}
+
 .json-mockup-items{
 	margin-left:2vw;	
 }
 
 .json-mockup-bracket, .json-mockup p{	
 	font-weight: 500;
-	font-size: 1rem;
-	margin: 0.5vh;
+	font-size: 12pt;
+	padding-top: 0.5vh;
 }
 
 .json-mockup-key{
-	color: #8A3F83 ;
-	color: #0056b3 !important;
+	color: #0056b3 ;
+	font-weight: 700;
 }
 
 .custom-nav{
@@ -122,7 +130,7 @@ section{
 }
 
 #graph-container{
-	margin-top: 12vh;
+	margin-top: 13vh;
 }
 
 #fade{
