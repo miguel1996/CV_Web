@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/graph.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -50,7 +51,7 @@
             <div class="jumbotron half-jumbotron">
                 <h1 class="display-2">&#60;Hello World/&#62;</h1>
                 <p class="lead custom-lead">&#123; "I'm Miguel Andrade" &#125;</p>                
-                <p class="uppercase">( 'Software Engineer' )</p>
+                <p class="uppercase">( 'Software Developer' )</p>
             </div>
             <div id="social-media">
                 <a href="#"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
@@ -65,7 +66,7 @@
                     <p class="json-mockup-bracket">&#123;</p>
                     <div class="json-mockup-items">
                         <p><span class="json-mockup-key">"Name"</span>: Miguel Andrade,</p>
-                        <p><span class="json-mockup-key">"Career"</span>: Software Engineer,</p>
+                        <p><span class="json-mockup-key">"Career"</span>: Software Developer,</p>
                         <p><span class="json-mockup-key">"Spoken Languages"</span>: [Portuguese, English],</p>
                         <p><span class="json-mockup-key">"Skills"</span>: [HTML\CSS, C#],</p>
                         <p><span class="json-mockup-key">"About"</span>: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
@@ -155,7 +156,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                       </div>
                     </div>
-                  </div>
+                  </div>                  
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -167,10 +168,42 @@
                 </div>
             </div>            
         </section>
-        <section id="contacts">
+        <section id="final">
             <div class="jumbotron full-jumbotron">
-                <h2 class="uppercase">&#60;Contacts/&#62;</h2>
-            </div>
-        </section>
+                <h2 class="uppercase">&#60;Contact Me/&#62;</h2> 
+                <div class="container contact-form">
+                    <form method="post">
+                        <h3>Drop Us a Message</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>               
+            </div>   
+            <hr>
+            <footer>
+                <p>&copy;2020 Miguel Andrade - Software Developer</p>
+                <div>
+                    <a href="#"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/miguel1996/" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
+                </div>
+            </footer>       
+        </section>     
+          
     </body>
 </html>
