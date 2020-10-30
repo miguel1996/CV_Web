@@ -90,7 +90,7 @@ footer{
 
 .highlight{
 	color: #0056b3 ;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .custom-nav-item{
@@ -194,5 +194,14 @@ footer{
 }
 
 .fade-in{
-	/*opacity:0;*/
+	opacity:0.0;
+}
+
+#title{
+	padding-left:6vw;
+	text-align: left;
+}
+
+#title h1{
+	display: inline;
 }

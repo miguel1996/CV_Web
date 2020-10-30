@@ -1,21 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-	var blinking_cursor = $("#animated-cursor");
-	function animateCursor(obj){
-		if(obj.css("visibility") == "visible"){			
-			obj.css("visibility", "hidden");
-		}
-		else{
-			obj.css("visibility", "visible");
-		}
-	}
-	setInterval(animateCursor.bind(null, blinking_cursor), 500);
-
-
-    /*$(window).scroll( function(){
-        $('.fadein').each( function(i){
+	$(window).scroll( function(){
+        $('.fade-in').each( function(i){
             
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_element = $(this).offset().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
@@ -23,7 +11,34 @@ $(document).ready(function(){
             }
             
         }); 
-    });*/
+    });
+
+    var hello = $("#hello-world");
+    var iterator = 0;
+    function animateHelloWorld(obj){
+    	//var text = "&#60;"+"Hello World/"+ "&#62;";
+		var text = ["<", "H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d", "/", ">"];
+		if(iterator < text.length){
+			var previous = hello.text();
+			hello.text(previous + text[iterator]);
+		}
+		else{
+			//hello.append('<span id="animated-cursor">_</span>');	
+			var blinking_cursor = $("#animated-cursor");
+			function animateCursor(obj){
+				if(obj.css("visibility") == "visible"){			
+					obj.css("visibility", "hidden");
+				}
+				else{
+					obj.css("visibility", "visible");
+				}
+			}
+			setInterval(animateCursor.bind(null, blinking_cursor), 500);		
+			clearInterval(HelloWorld);
+		}
+		iterator++;
+	}
+	var HelloWorld = setInterval(animateHelloWorld.bind(null, hello), 110);
 
 	var loading_dots = $("#loading-dots");
 	var counter = 0;
@@ -47,6 +62,6 @@ $(document).ready(function(){
 		
 		obj.html(html);
 	}
-	setInterval(animateDots.bind(null, loading_dots), 500);
+	setInterval(animateDots.bind(null, loading_dots), 500);       
 
 });

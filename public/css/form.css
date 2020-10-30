@@ -44,18 +44,19 @@
     border: none;
 }
 .form-control{
-    background-color: #6B6A6A;
+    background-color: #232323;
     border: none;
     color: white;
 }
 ::placeholder{
     color: white !important;
+    font-family: 'Montserrat', sans-serif;
 }
 .form-control:focus{
     border-width: 2px;
     border-color: #0062cc;
     border-style: solid;    
-    background-color: #6B6A6A;    
+    background-color: #232323;    
     color: white;
 }
 .form-control:hover{
