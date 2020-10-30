@@ -152,6 +152,7 @@ footer{
 }
 
 .custom-carousel{
+	background: #6B6A6A;
 	margin-left:auto;
 	margin-right:auto;
 	display: block;
@@ -170,6 +171,8 @@ footer{
 
 .custom-carousel p, h5{
 	font-weight: 500;
+	z-index: 1000;
+	position:relative;
 }
 
 #final{
@@ -178,6 +181,16 @@ footer{
 
 #final .highlight{
 	text-align: center;
+}
+
+.foggy{
+	bottom: 0px;
+	z-index:1;
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	background: #6B6A6A;
+	opacity: 0.4;
 }
 
 #fade{
