@@ -11,9 +11,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
         <title>Miguel Andrade</title>
     </head>
@@ -49,7 +49,7 @@
                 </div>
             </nav>
             <div class="jumbotron half-jumbotron">
-                <h1 class="display-2">&#60;Hello World/<span id="animated-cursor">&#62;</span></h1>
+                <h1 class="display-2">&#60;Hello World/&#62;<span id="animated-cursor">_</span></h1>
                 <p class="lead custom-lead">&#123; "I'm Miguel Andrade" &#125;</p>                
                 <p class="uppercase">( 'Software Developer' )</p>
             </div>
@@ -59,7 +59,7 @@
             </div>
     	</section>    
 
-        <section id="about" class="flex-container">
+        <section id="about" class="flex-container fade-in">
             <div class="jumbotron half-jumbotron flex-child">
                 <h2 class="uppercase">&#60;About/&#62;</h2>
                 <div class="json-mockup">
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </section>      
-        <section id="portfolio">
+        <section id="portfolio" class="fade-in">
             <div class="jumbotron full-jumbotron">
                 <h2 class="uppercase">&#60;Portfolio/&#62;</h2>
                 <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-ride="carousel">
@@ -148,7 +148,7 @@
                       <img class="d-block w-100" src="img/event2.jpg" alt="Second slide">
                       <div class="carousel-caption d-none d-md-block">
                         <h5 class="highlight">easyEvent</h5>
-                        <p>easyEvent is an event scheduling platform on which the user is capable of creating and submiting custom forms. This is a lecture project developed through Laravel and MySQL.</p>
+                        <p>easyEvent is an event scheduling platform on which the user is capable of creating and submiting custom forms. This is a group project from a lecture developed through Laravel and MySQL.</p>
                       </div>
                     </div>
                     <div class="carousel-item">
@@ -170,7 +170,7 @@
                 </div>
             </div>            
         </section>
-        <section id="final">
+        <section id="final" class="fade-in">
             <div class="jumbotron full-jumbotron">
                 <h2 class="uppercase">&#60;Contact Me/&#62;</h2> 
                 <div class="container contact-form">
@@ -195,7 +195,7 @@
                         </div>
                     </form>
                 </div>    
-                <h3 class="highlight">Code compiling... Will respond when possible!</h3>
+                <h3 class="highlight">Code compiling<span id="loading-dots">...</span> Will respond when possible!</h3>
             </div>   
             <hr>
             <footer>
