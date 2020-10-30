@@ -1,5 +1,6 @@
 ul.timeline {
     margin-top:10vh;
+    margin-right:10vw;
     list-style-type: none;
     position: relative;
     border-right-color: #ffffff;
@@ -36,6 +37,8 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
-ul .date{
-	padding-right:2vw;
+ul.timeline .date{
+	margin-right:2vw;
+    position: absolute;
+    right: -180px;
 }

@@ -1,6 +1,5 @@
 .contact-form{
     background: #000000;
-    /*margin-top: 10%;*/
     margin-bottom: 5%;
     width: 100%;
 }
@@ -36,20 +35,31 @@
     color: #fff;
     cursor: pointer;
 }
-.btnContactSubmit
+.btnContact
 {
     width: 50%;
-    /*border-radius: 1rem;*/
     padding: 1.5%;
     color: #fff;
-    background-color: #0062cc;
-    border: none;
     cursor: pointer;
+    border: none;
 }
 .form-control{
-    background:#E5E7E8;
+    background-color: #6B6A6A;
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white !important;
 }
 .form-control:focus{
     border-width: 2px;
     border-color: #0062cc;
+    border-style: solid;    
+    background-color: #6B6A6A;    
+    color: white;
+}
+.form-control:hover{
+    border-color: #0062cc;
+    border-width: 2px;
+    border-style: solid;
 }

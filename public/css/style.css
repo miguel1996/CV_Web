@@ -5,7 +5,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2pt;	
 	font-size: 15pt;
-	margin: 7.5vh 6vw 0vh 7vw;
+	margin: 7.5vh 6vw 7.5vh 7vw;
 }
 
 hr{
@@ -94,8 +94,8 @@ footer{
 }
 
 .custom-nav-item{
-	margin-top: 2.5vh;
-	margin-bottom: 2.5vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 #cover > img{
@@ -108,7 +108,7 @@ footer{
 
 #follow-scroll{
 	position: fixed;
-    top: 30vh;
+    top: 35vh;
     left: 3.5vw;
     font-weight: 500;
     font-size: 15pt;
@@ -120,9 +120,10 @@ footer{
 	margin-right:0.5vh;
 	margin-left:0.5vh;
 }
+
 .icon:hover{
 	border-color: #0062cc;
-	border-width: 2px;
+	border-width: 3px;
 	border-style: solid;
 	border-radius: 1.5rem;
 }
@@ -164,6 +165,11 @@ footer{
 
 #final{
 	height: 80vh;
+}
+
+#final h3{
+	color: #0062cc;
+	text-align: center;
 }
 
 #fade{
