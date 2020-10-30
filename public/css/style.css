@@ -88,7 +88,7 @@ footer{
 	padding-top: 0.5vh;
 }
 
-.json-mockup-key{
+.highlight{
 	color: #0056b3 ;
 	font-weight: 700;
 }
@@ -151,24 +151,32 @@ footer{
 	margin-top: 13vh;
 }
 
-.custom-carousel, iframe{
+.custom-carousel{
 	margin-left:auto;
 	margin-right:auto;
 	display: block;
 	margin-top: 8vh;
 	width: 70vw;
+	text-shadow: 2px 2px 2px #000000;
 }
 
 .custom-carousel img{
 	height: 70vh;
 }
 
+.custom-carousel h5{
+	font-size: 20pt;
+}
+
+.custom-carousel p, h5{
+	font-weight: 500;
+}
+
 #final{
 	height: 80vh;
 }
 
-#final h3{
-	color: #0062cc;
+#final .highlight{
 	text-align: center;
 }
 
