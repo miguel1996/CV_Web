@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$(window).scroll( function(){
         $('.fade-in').each( function(i){
             
-            var bottom_of_element = $(this).offset().top;
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight()/2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
@@ -16,11 +16,11 @@ $(document).ready(function() {
     var hello = $("#hello-world");
     var iterator = 0;
     function animateHelloWorld(obj){
-    	//var text = "&#60;"+"Hello World/"+ "&#62;";
 		var text = ["<", "H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d", "/", ">"];
 		if(iterator < text.length){
-			var previous = hello.text();
+			var previous = hello.text();			
 			hello.text(previous + text[iterator]);
+			//sleep(2000);
 		}
 		else{
 			//hello.append('<span id="animated-cursor">_</span>');	

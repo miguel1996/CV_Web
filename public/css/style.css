@@ -106,7 +106,7 @@ footer{
 	z-index: -1000;
 }
 
-#follow-scroll{
+#side-nav{
 	position: fixed;
     top: 35vh;
     left: 3.5vw;
@@ -177,6 +177,7 @@ footer{
 
 #final{
 	height: 80vh;
+	margin-top: 10vh;
 }
 
 #final .highlight{
@@ -204,4 +205,8 @@ footer{
 
 #title h1{
 	display: inline;
+}
+
+.active{
+    color: #0056b3;
 }
