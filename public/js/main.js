@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1;
+	var yyyy = today.getFullYear();
+	if(dd<10) 
+	{
+	    dd='0'+dd;
+	} 
+	$(".day").each(function(index, element){
+		$(element).text(dd);
+	});
+	$(".month").each(function(index, element){
+		$(element).text(mm);
+	});
+	$(".year").each(function(index, element){
+		$(element).text(yyyy);
+	});
+
 	$(window).scroll( function(){
         $('.fade-in').each( function(i){
             
