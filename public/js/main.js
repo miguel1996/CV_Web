@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
 	var today = new Date();
 	var dd = today.getDate();
@@ -38,10 +38,8 @@ $(document).ready(function() {
 		if(iterator < text.length){
 			var previous = hello.text();			
 			hello.text(previous + text[iterator]);
-			//sleep(2000);
 		}
 		else{
-			//hello.append('<span id="animated-cursor">_</span>');	
 			var blinking_cursor = $("#animated-cursor");
 			function animateCursor(obj){
 				if(obj.css("visibility") == "visible"){			
@@ -83,3 +81,4 @@ $(document).ready(function() {
 	setInterval(animateDots.bind(null, loading_dots), 500);       
 
 });
+

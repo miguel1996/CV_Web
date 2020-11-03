@@ -53,7 +53,7 @@
                         <h1 class="display-2"><span id="animated-cursor">_</span></h1>
                     </div>
                     <p class="lead custom-lead">&#123; "I'm <%=data.name%>" &#125;</p>                
-                    <p class="uppercase">( 'Software Developer' )</p>
+                    <p class="uppercase">( '<%=data.career%>' )</p>
                 </div>
                 <div id="social-media">
                     <a href="#"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
@@ -67,12 +67,36 @@
                     <div class="json-mockup">
                         <p class="json-mockup-bracket">&#123;</p>
                         <div class="json-mockup-items">
-                            <p><span class="highlight">"Name"</span>: Miguel Andrade,</p>
-                            <p><span class="highlight">"Career"</span>: Software Developer,</p>
-                            <p><span class="highlight">"Spoken Languages"</span>: [Portuguese, English],</p>
-                            <p><span class="highlight">"Skills"</span>: [Git, MySQL, HTML5/CSS3, Javascript, Node.JS, PHP, Laravel, Python, Django, C#, Unity, Java, Android Studio, Processing],</p>
-                            <p><span class="highlight">"About"</span>: "Hi, I'm Miguel, a Computer Engineering graduate mostly interested in Web-based applications, currently based in Portugal. <br><br> I'm a versatile, determined person, continuously acquiring new knowledge, to evolve both personally and professionally. I'm always eager for a challenge, and I'm never afraid to use the right tools for the job, regardless of my experience with them.<br><br> Currently, I'm working as an Assistant Researcher in ITI/LARSyS, feel free to contact me through the form bellow, or any of my social media.",</p>
-                            <p><span class="highlight">"CV"</span>: Available for download <a href="#" target="_blank" class="highlight">here</a>.</p>
+                            <p><span class="highlight">Name</span>: "<%=data.name%>",</p>
+                            <p><span class="highlight">Career</span>: "<%=data.career%>",</p>
+                            <p><span class="highlight">Spoken Languages</span>: [
+                                    <% for(var i=0; i<data.spoken_languages.length; i++) {%>
+                                        "<%= data.spoken_languages[i] %>"
+                                        <% if (i + 1 != data.spoken_languages.length) { %>
+                                            ,
+                                        <% } %>
+                                    <% } %>
+                                ],
+                            </p>
+                            <p><span class="highlight">Skills</span>: [
+                                    <% for(var i=0; i<data.skills.length; i++) {%>
+                                        "<%= data.skills[i] %>"
+                                        <% if (i + 1 != data.skills.length) { %>
+                                            ,
+                                        <% } %>
+                                    <% } %>
+                                ],
+                            </p>
+                            <p><span class="highlight">About</span>: "
+                                    <% for(var i=0; i<data.about.length; i++) {%>
+                                        <%= data.about[i] %>
+                                        <% if (i + 1 != data.about.length) { %>
+                                            <br><br>
+                                        <% } %>
+                                    <% } %>
+                                ",
+                            </p>
+                            <p><span class="highlight">CV</span>: Available for download <a href="<%= data.cv_file %>" target="_blank" class="highlight">here</a>.</p>
                         </div>
                         <p class="json-mockup-bracket">&#125;</p>
                     </div>
@@ -116,7 +140,7 @@
                                     </li>
                                     <li>
                                         <span>Assistant Researcher in ITI/LARSyS&emsp;</span>
-                                        <span class="float-right date">01/01/2020 </span>
+                                        <span class="float-right date">01/01/2020</span>
                                     </li>
                                     <li>
                                         <span>Today&emsp;</span>
