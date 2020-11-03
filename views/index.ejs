@@ -18,7 +18,7 @@
         <title>Miguel Andrade</title>
     </head>
 
-    <body data-spy="scroll" data-target="#side-nav" data-offset="0"> 
+    <body data-spy="scroll" data-target="#side-nav" data-offset="10"> 
         <div id="side-nav">
             <ul id="navbar" class="nav flex-column custom-nav">
                 <li class="nav-item custom-nav-item">
@@ -52,7 +52,7 @@
                         <h1 id="hello-world" class="display-2"><!--<span id="animated-cursor">_</span>--></h1>
                         <h1 class="display-2"><span id="animated-cursor">_</span></h1>
                     </div>
-                    <p class="lead custom-lead">&#123; "I'm Miguel Andrade" &#125;</p>                
+                    <p class="lead custom-lead">&#123; "I'm <%=data.name%>" &#125;</p>                
                     <p class="uppercase">( 'Software Developer' )</p>
                 </div>
                 <div id="social-media">
@@ -120,7 +120,7 @@
                                     </li>
                                     <li>
                                         <span>Today&emsp;</span>
-                                        <span class="float-right date">23/10/2020</span>
+                                        <span class="float-right date"><span class="day">23</span>/<span class="month">10</span>/<span class="year">2020</span></span>
                                     </li>
                                 </ul>
                             </div>
@@ -143,7 +143,7 @@
                           <img class="d-block w-100" src="img/dome.JPG" alt="First slide">
                           <div class="carousel-caption d-none d-md-block">
                             <h5 class="highlight">ARDome</h5>
-                            <p>ARDome is a persuasive interface for inspiring pro-environmental behaviors, by leveraging Augmented Reality technology, with a VR version currently in development. This app was built through Unity and ARCore, and is available for download <a class="highlight" href="https://play.google.com/store/apps/details?id=com.tigerwhale.ardome" target="_blank">here</a>.</p>
+                            <p>ARDome is a persuasive interface for inspiring pro-environmental behaviors, by leveraging Augmented Reality technology. This app was built through Unity and ARCore, and is available for download <a class="highlight" href="https://play.google.com/store/apps/details?id=com.tigerwhale.ardome" target="_blank">here</a>.</p>
                           </div>
                         </div>
                         <div class="carousel-item">
@@ -201,7 +201,7 @@
                 </div>   
                 <hr>
                 <footer>
-                    <p>&copy;2020 Miguel Andrade - Software Developer</p>
+                    <p>&copy;<span class="year">2020</span> Miguel Andrade - Software Developer</p>
                     <div>
                         <a href="#"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
                         <a href="https://github.com/miguel1996/" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
