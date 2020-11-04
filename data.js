@@ -94,7 +94,7 @@ const data = {
 		contact: {
 			email: "",
 			linkedin: "",
-			github: ""
+			github: "https://github.com/miguel1996/"
 		}
 	}
 }

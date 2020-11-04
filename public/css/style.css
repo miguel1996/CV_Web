@@ -30,6 +30,11 @@ p{
 	line-height: 1.6;
 }
 
+textarea{
+	width: 100%; 
+	height: 150px !important;
+}
+
 section{
 	height: 100vh;
 }
