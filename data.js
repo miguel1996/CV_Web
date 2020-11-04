@@ -71,7 +71,7 @@ const data = {
 				description: "ARDome is a persuasive interface for inspiring pro-environmental behaviors, by leveraging Augmented Reality technology. This app was built through Unity and ARCore.",
 				github: "",
 				download: "",
-				img: ""
+				img: "img/dome.JPG"
 			},
 			{
 				id: "easyEvent",
@@ -79,7 +79,7 @@ const data = {
 				description: "easyEvent is an event scheduling platform on which the user is capable of creating and submiting custom forms. This is a group project from a lecture developed through Laravel and MySQL.",
 				github: "",
 				download: "",
-				img: ""
+				img: "img/event2.jpg"
 			},
 			{
 				id: "cv",
@@ -87,7 +87,7 @@ const data = {
 				description: "This very own website was developed as a means to promote what I do best. It's a simple web page powered by a Node.JS server, coupled with Express and Embed.JS.",
 				github: "",
 				download: "",
-				img: ""
+				img: "img/second_cover_photo.png"
 			}
 		],
 
