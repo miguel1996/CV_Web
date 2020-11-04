@@ -13,6 +13,7 @@
 
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 
         <title>Miguel Andrade</title>
@@ -49,7 +50,7 @@
                 </nav>
                 <div class="jumbotron half-jumbotron">
                     <div id="title">
-                        <h1 id="hello-world" class="display-2"><!--<span id="animated-cursor">_</span>--></h1>
+                        <h1 id="hello-world" class="display-2"></h1>
                         <h1 class="display-2"><span id="animated-cursor">_</span></h1>
                     </div>
                     <p class="lead custom-lead">&#123; "I'm <%=data.name%>" &#125;</p>                
@@ -128,7 +129,6 @@
                     <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-ride="carousel">
                       <div class="foggy"></div>
                       <ol class="carousel-indicators">
-                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
                         <% for(var i=0; i<data.portfolio.length; i++) {%>
                             <% if (i == 0) { %>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="<%= i %>" class="active"></li>
@@ -173,14 +173,15 @@
                 <div class="jumbotron full-jumbotron">
                     <h2 class="uppercase">&#60;Contact Me/&#62;</h2> 
                     <div class="container contact-form">
-                        <form method="post" action="mailto:miguel.alex.andrade@gmail.com" enctype="multipart/form-data">
+                        <form id="custom-contact-form">
+                        <!--<form method="post" action="mailto:miguel.alex.andrade@gmail.com" enctype="multipart/form-data">-->
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="txtName" class="form-control" placeholder="Name" value="" />
+                                        <input id="name" type="text" name="txtName" class="form-control" placeholder="Name" value="" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="txtEmail" class="form-control" placeholder="Email" value="" />
+                                        <input id="email" type="email" name="txtEmail" class="form-control" placeholder="Email" value="" />
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
@@ -188,7 +189,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea name="txtMsg" class="form-control" placeholder="Message"></textarea>
+                                        <textarea id="message" name="txtMsg" class="form-control" placeholder="Message" style="height: 150px;"></textarea>
                                     </div>
                                 </div>
                             </div>

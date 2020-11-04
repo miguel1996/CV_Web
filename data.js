@@ -5,7 +5,6 @@ const data = {
 		spoken_languages: ["Portuguese", "English"],
 		skills: ["Git", "MySQL", "HTML5/CSS3", "Javascript/JQuery", "Node.JS", "PHP", "Laravel", "Python", "Django", "C#", "Unity", "Java", "Android Studio", "Processing"],
 		about: ["Hi, I'm Miguel, a Computer Engineering graduate mostly interested in Web-based applications, currently based in Portugal.", "I'm a versatile, determined person, continuously acquiring new knowledge, to evolve both personally and professionally. I'm always eager for a challenge, and I'm never afraid to use the right tools for the job, regardless of my experience with them.", "Currently, I'm working as an Assistant Researcher in ITI/LARSyS, feel free to contact me through the form bellow, or any of my social media."],
-		//about: ["Teste","Teste","Teste","Teste","Teste","Teste"],
 		cv_file: "",
 		timeline: [
 			{
@@ -84,7 +83,7 @@ const data = {
 			{
 				id: "cv",
 				title: "Personal Website",
-				description: "This very own website was developed as a means to promote what I do best. It's a simple web page powered by a Node.JS server, coupled with Express and Embed.JS.",
+				description: "This very own website was developed as a means to promote what I do best. It's a simple web page powered by a Node.JS server, coupled with Express and EJS.",
 				github: "",
 				download: "",
 				img: "img/second_cover_photo.png"

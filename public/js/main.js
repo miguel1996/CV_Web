@@ -54,7 +54,7 @@ $(document).ready(function(){
 		}
 		iterator++;
 	}
-	var HelloWorld = setInterval(animateHelloWorld.bind(null, hello), 110);
+	var HelloWorld = setInterval(animateHelloWorld.bind(null, hello), 80);
 
 	var loading_dots = $("#loading-dots");
 	var counter = 0;
