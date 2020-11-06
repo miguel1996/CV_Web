@@ -16,5 +16,9 @@ $(document).ready(function(){
 			console.log('Form submitted');
 		});
 
+		$('#name').val('');
+		$('#email').val('');
+		$('#message').val('');
+		//form.reset();
 	});
 });

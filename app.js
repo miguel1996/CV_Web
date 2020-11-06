@@ -16,17 +16,23 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 app.post('/email', (req, res) => {
-	console.log("Form submitted successfully")
-	console.log(`${req.body.name} has contacted you`)  	
-	res.json({message: "Form submitted successfully"})
+	console.log('LOG: ', "Form submitted")		
+  	mailHandler.sendMail(`<${req.body.email}> ${req.body.name} has contacted you`, req.body.message, (err, data) => {
+        if (err) {
+            console.log('ERROR: ', err);
+            return res.status(500).json({ message: err.message || 'Internal Error' })
+        }
+        console.log('Email sent!!!');
+        return res.json({ message: 'Email sent!' })
+    })
 })
 
 app.get('', (req, res) => {
   	res.render('index', dataHandler.data)
-  	console.log('Connection established with client')
+  	console.log('LOG: ', 'Connection established with client')
 })
 
 
 app.listen(port, () => {
-  	console.log(`Listening at http://localhost:${port}`)
+  	console.log('LOG: ', `Listening at http://localhost:${port}`)
 })
