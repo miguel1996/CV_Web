@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-	//$("#email-toast").css("right:0");
+	const name = $('#name');
+	const email = $('#email');
+	const message = $('#message');
+	const emailToast = $('#email-toast');
 
 	$('#name').on('focus', (e) => {
 		$('#name').removeClass("form-error");
@@ -17,26 +20,26 @@ $(document).ready(function(){
 	$('#custom-contact-form').on('submit', (e) => {
 		e.preventDefault();
 
-		const name = $('#name').val().trim();
-		const email = $('#email').val().trim();
-		const message = $('#message').val().trim();
+		const nameVal = name.val().trim();
+		const emailVal = email.val().trim();
+		const messageVal = message.val().trim();
 
 		const form_data = {
-			name,
-			email,
-			message
+			nameVal,
+			emailVal,
+			messageVal
 		};
 
-		if(name == ''){
-			$('#name').addClass("form-error");
+		if(nameVal == ''){
+			name.addClass("form-error");
 			return;
 		}
-		if(email == ''){
-			$('#email').addClass("form-error");
+		if(emailVal == ''){
+			email.addClass("form-error");
 			return;
 		}
-		if(message == ''){
-			$('#message').addClass("form-error");
+		if(messageVal == ''){
+			message.addClass("form-error");
 			return;
 		}
 
@@ -44,18 +47,18 @@ $(document).ready(function(){
 			console.log('Form submitted');
 		});
 
-		$('#name').val('');
-		$('#email').val('');
-		$('#message').val('');
+		name.val('');
+		email.val('');
+		message.val('');
 
-		$('#email-toast').toast({
+		emailToast.toast({
 			autohide: false
 		});
-		$('#email-toast').toast('show');
+		emailToast.toast('show');
 
-		$('#email-toast').animate({'right':'10vh'},1000, (e)=>{
+		emailToast.animate({'right':'10vh'},1000, (e)=>{
 			setTimeout(()=>{
-				$('#email-toast').animate({'right':'-50vh'},1000);
+				emailToast.animate({'right':'-50vh'},1000);
 			}, 5000);
 			
 		});
