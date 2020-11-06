@@ -19,6 +19,11 @@ $(document).ready(function(){
 		$('#name').val('');
 		$('#email').val('');
 		$('#message').val('');
+
+		$('#email-toast').toast({
+			delay: 5000
+		});
+		$('#email-toast').toast('show');
 		//form.reset();
 	});
 });

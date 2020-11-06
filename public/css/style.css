@@ -214,3 +214,18 @@ footer{
 .active{
     color: #0056b3;
 }
+
+#email-toast{
+	position: absolute; 
+	top: 0; 
+	right: 0;
+}
+
+#email-toast .toast-header{
+	color: #ffffff;
+	background-color: #0062cc;
+}
+
+#email-toast .toast-body{
+	background-color: #232323;
+}

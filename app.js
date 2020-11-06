@@ -19,10 +19,10 @@ app.post('/email', (req, res) => {
 	console.log('LOG: ', "Form submitted")		
   	mailHandler.sendMail(`<${req.body.email}> ${req.body.name} has contacted you`, req.body.message, (err, data) => {
         if (err) {
-            console.log('ERROR: ', err);
+            console.log('ERROR: ', err)
             return res.status(500).json({ message: err.message || 'Internal Error' })
         }
-        console.log('Email sent!!!');
+        console.log('LOG: ', 'Email sent!!!')
         return res.json({ message: 'Email sent!' })
     })
 })
