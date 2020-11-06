@@ -49,10 +49,17 @@ $(document).ready(function(){
 		$('#message').val('');
 
 		$('#email-toast').toast({
-			delay: 5000
+			autohide: false
 		});
 		$('#email-toast').toast('show');
 
-		$('#email-toast').animate({'right':'10vh'},1000);
+		$('#email-toast').animate({'right':'10vh'},1000, (e)=>{
+			setTimeout(()=>{
+				$('#email-toast').animate({'right':'-50vh'},1000);
+			}, 5000);
+			
+		});
+
+
 	});
 });
