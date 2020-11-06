@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	//$("#email-toast").css("right:0");
+
 	$('#name').on('focus', (e) => {
 		$('#name').removeClass("form-error");
 	});
@@ -50,6 +52,7 @@ $(document).ready(function(){
 			delay: 5000
 		});
 		$('#email-toast').toast('show');
-		//form.reset();
+
+		$('#email-toast').animate({'right':'10vh'},1000);
 	});
 });

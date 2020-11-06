@@ -16,7 +16,7 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 app.post('/email', (req, res) => {
-	console.log('LOG: ', "Form submitted")		
+	console.log('LOG: ', "Form submitted")	
   	mailHandler.sendMail(`<${req.body.email}> ${req.body.name} has contacted you`, req.body.message, (err, data) => {
         if (err) {
             console.log('ERROR: ', err)

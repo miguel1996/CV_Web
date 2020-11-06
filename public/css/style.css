@@ -216,9 +216,10 @@ footer{
 }
 
 .custom-toast{
-	position: absolute; 
-	top: 0; 
-	right: 0;
+	z-index:1000;
+	position: fixed; 
+	top: 10vh; 
+	right: -50vh;
 }
 
 .custom-toast .toast-header{
