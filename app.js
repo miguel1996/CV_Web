@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const db = require('./data')
+const dataHandler = require('./data')
+const mailHandler = require('./mail')
 
 app.use(express.static('public'))
 
@@ -21,7 +22,7 @@ app.post('/email', (req, res) => {
 })
 
 app.get('', (req, res) => {
-  	res.render('index', db.data)
+  	res.render('index', dataHandler.data)
   	console.log('Connection established with client')
 })
 
