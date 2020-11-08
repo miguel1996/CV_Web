@@ -156,6 +156,8 @@ footer{
 }
 
 .custom-carousel{
+	border: 1px solid #000000;
+    border-radius: 0.3rem;
 	background: #6B6A6A;
 	margin-left:auto;
 	margin-right:auto;
@@ -167,6 +169,8 @@ footer{
 
 .custom-carousel img{
 	height: 70vh;
+	border: 1px solid #000000;
+    border-radius: 0.3rem;
 }
 
 .custom-carousel h5{
@@ -189,6 +193,8 @@ footer{
 }
 
 .foggy{
+	border: 1px solid #000000;
+    border-radius: 0.3rem;
 	bottom: 0px;
 	z-index:1;
 	position: absolute;
