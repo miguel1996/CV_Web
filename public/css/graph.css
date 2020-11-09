@@ -43,14 +43,20 @@ ul.timeline .date{
     position: absolute;
     right: -180px;
 }
-ul.timeline > li:hover .hide{
+
+ul.timeline li:hover .hide{
+    opacity: 1;
     top:0.5vh;
     right:1vw;
     position: absolute;
     display: block;
 }
 .hide{    
-    display: none;
+    opacity: 0;
+    top:0.5vh;
+    right:5vw;
+    transition: right 1s, opacity 1s;    
+    position: absolute;
     width: 40vw;
     background: #232323;    
     border-radius: 0.5rem;       
@@ -65,7 +71,6 @@ ul.timeline > li:hover .hide{
     text-align: right;
     border-radius: 0.5rem 0.5rem 0 0;
     background: #0056b3;
-    /*border-bottom: 1px solid #ffffff;*/
     font-weight: 600;
 }
 .hide p{
