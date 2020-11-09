@@ -17,14 +17,14 @@ app.use(express.json())
 
 app.post('/email', (req, res) => {
 	console.log('LOG: ', "Form submitted")	
-  	/*mailHandler.sendMail(`<${req.body.email}> ${req.body.name} has contacted you`, req.body.message, (err, data) => {
+  	mailHandler.sendMail("miguel.nodemail@gmail.com",`<${req.body.emailVal}> ${req.body.nameVal} has contacted you`, req.body.messageVal, (err, data) => {
         if (err) {
             console.log('ERROR: ', err)
             return res.status(500).json({ message: err.message || 'Internal Error' })
         }
         console.log('LOG: ', 'Email sent!!!')
         return res.json({ message: 'Email sent!' })
-    })*/
+    })
 })
 
 app.get('', (req, res) => {
