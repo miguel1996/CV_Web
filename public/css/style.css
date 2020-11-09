@@ -157,8 +157,8 @@ footer{
 
 .custom-carousel{
 	border: 1px solid #000000;
-    border-radius: 0.3rem;
-	background: #6B6A6A;
+    border-radius: 0.5rem;
+	background: #000000;
 	margin-left:auto;
 	margin-right:auto;
 	display: block;
@@ -222,6 +222,7 @@ footer{
 }
 
 .custom-toast{
+	background-color: #000000;
 	z-index:1000;
 	position: fixed; 
 	top: 10vh; 
@@ -229,10 +230,13 @@ footer{
 }
 
 .custom-toast .toast-header{
+	border-radius:0.5rem 0.5rem 0 0;
 	color: #ffffff;
 	background-color: #0062cc;
+	border: none;
 }
 
 .custom-toast .toast-body{
+	border-radius:0 0 0.5rem 0.5rem;
 	background-color: #232323;
 }
