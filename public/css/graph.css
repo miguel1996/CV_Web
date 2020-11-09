@@ -1,5 +1,5 @@
 ul.timeline {
-    margin-top:10vh;
+    margin-top:15vh;
     margin-right:10vw;
     list-style-type: none;
     position: relative;
@@ -44,7 +44,7 @@ ul.timeline .date{
     right: -180px;
 }
 ul.timeline > li:hover .hide{
-    top:0vh;
+    top:0.5vh;
     right:1vw;
     position: absolute;
     display: block;

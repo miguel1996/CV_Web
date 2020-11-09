@@ -11,55 +11,55 @@ const data = {
 				id: "bachelor",
 				title: "Computer Engineering Bachelor's",
 				date: "15/09/2014",
-				description: ""
+				description: "Enrolled in Computer Engineering Bachelor's (EQF Level 6), in University of Madeira (UMa), Portugal. Developed skills include Data Structures and Algorithms, Object-Oriented Programming, Relational Databases, Artificial Intelligence, Human-Computer Interaction, etc. Graduated in 04/06/2018."
 			},
 			{
 				id: "union",
 				title: "Volunteering in Student's Union",
 				date: "21/10/2014",
-				description: ""
+				description: "Conducted volunteering work in UMa's Student's Union. Assigned functions were student support in the main office HelpDesk, salesclerk in the Academic Stores, assistance for the preparation and execution of cultural events (Fado Concerts, Academic Festivities, etc) and website maintenance."
 			},
-			{
+			/*{
 				id: "graduation_bachelor",
 				title: "Graduation from Bachelor's",
 				date: "04/06/2018",
 				description: ""
-			},
-			{
+			},*/
+			/*{
 				id: "end_union",
 				title: "Concluded Volunteering in Student's Union",
 				date: "13/06/2018",
 				description: ""
-			},
+			},*/
 			{
 				id: "internship",
 				title: "Web Developer in Internship Program",
 				date: "01/08/2018",
-				description: ""
+				description: "1 month Summer Internship Program, working as a Web Developer, in UMa's Student's Union. Responsabilities included development of the Madeiran Heritage website, and overall web maintenance and support."
 			},
-			{
+			/*{
 				id: "end_internship",
 				title: "End of Internship",
 				date: "31/08/2018",
 				description: ""
-			},
+			},*/
 			{
 				id: "master",
 				title: "Computer Engineering Master's",
 				date: "17/09/2018",
-				description: ""
+				description: "Enrolled in Computer Engineering Master's (EQF Level 7), in University of Madeira (UMa), Portugal. Developed skills include Network Centered Applications, Service Design, Distributed Systems, Software Architecture/Design, Software Structures for UI, etc."
 			},
 			{
 				id: "thesis",
 				title: "Initiated Master Thesis",
 				date: "16/09/2019",
-				description: ""
+				description: "Began production of the Master Thesis, in the field of Artificial Reality (Augmented, Virtual and Mixed Reality). The main objective is the development and comparison of similar experiences for all the different branches, and the proposition of a new type, Holographic Reality."
 			},
 			{
 				id: "researcher",
 				title: "Assistant Researcher in ITI/LARSyS",
 				date: "01/01/2020",
-				description: ""
+				description: "Currently working as an Assistant Researcher in ITI/LARSyS, by producing persuasive Artificial Reality experiences. The main purpose of these experiences is, not only entertain, but also induce pro-environmental behaviours in its users, by drawing attention to current ecological concerns. Responsabilities also include conducting user studies, data processing and producing research publications."
 			}
 		],
 
