@@ -22,7 +22,7 @@ app.post('/email', (req, res) => {
             console.log('ERROR: ', err)
             return res.status(500).json({ message: err.message || 'Internal Error' })
         }
-        console.log('LOG: ', 'Email sent!!!')
+        console.log('LOG: ', 'Email sent!')
         return res.json({ message: 'Email sent!' })
     })
 })

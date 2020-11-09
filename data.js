@@ -89,12 +89,10 @@ const data = {
 				img: "img/second_cover_photo.png"
 			}
 		],
-
-		contact: {
-			email: "miguel.nodemail@gmail.com",
-			linkedin: "",
-			github: "https://github.com/miguel1996/"
-		}
+		
+		email: "miguel.nodemail@gmail.com",
+		linkedin: "",
+		github: "https://github.com/miguel1996/"
 	}
 }
 

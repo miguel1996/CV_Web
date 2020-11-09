@@ -230,13 +230,13 @@ footer{
 }
 
 .custom-toast .toast-header{
-	border-radius:0.5rem 0.5rem 0 0;
+	border-radius:0.3rem 0.3rem 0 0;
 	color: #ffffff;
 	background-color: #0062cc;
 	border: none;
 }
 
 .custom-toast .toast-body{
-	border-radius:0 0 0.5rem 0.5rem;
+	border-radius:0 0 0.3rem 0.3rem;
 	background-color: #232323;
 }
