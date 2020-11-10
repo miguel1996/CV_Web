@@ -45,7 +45,7 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
     animation-name: graphAnimation;
-    animation-duration: 2.3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     content: ' ';
@@ -61,7 +61,7 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 
-    box-shadow:0px 0px 0px 0px #0056b3 inset;
+    box-shadow:0px 0px 0px 0px #0056b3;
 }
 
 ul.timeline .date{
@@ -83,7 +83,7 @@ ul.timeline li:hover .hide{
     right:5vw;
     transition: right 1s, opacity 1s;    
     position: absolute;
-    width: 40vw;
+    width: 32vw;
     background: #232323;    
     border-radius: 0.5rem;       
     z-index: 1000;

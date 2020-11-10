@@ -20,10 +20,10 @@ app.post('/email', (req, res) => {
   	mailHandler.sendMail("miguel.nodemail@gmail.com",`<${req.body.emailVal}> ${req.body.nameVal} has contacted you`, req.body.messageVal, (err, data) => {
         if (err) {
             console.log('ERROR: ', err)
-            return res.status(500).json({ message: err.message || 'Internal Error', header: "Error", body: "Something went wrong! Please, try again later!" })
+            return res.json({ message: err.message || 'Internal Error', header: "Server Error", body: "Something went wrong! Please, try again later!" })
         }
         console.log('LOG: ', 'Email sent!')
-        return res.json({ header: 'Email Sent', body: "Thank you for contacting me. I'll get in touch with you as soon as possible!")
+        return res.json({ header: 'Email Sent', body: "Thank you for contacting me. I'll get in touch with you as soon as possible!"})
     })
 })
 

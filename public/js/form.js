@@ -41,27 +41,28 @@ $(document).ready(function(){
 		if(messageVal == ''){
 			message.addClass("form-error");
 			return;
-		}
+		}		
 
-		$.post('/email', form_data, function(){
+		$.post('/email', form_data, function(res){
 			console.log('Form submitted');
+			console.log(res);
+			emailToast.children(".toast-wrapper").children(".toast-header").text(res.header);
+			emailToast.children(".toast-wrapper").children(".toast-body").text(res.body);
+
+			emailToast.toast({
+				autohide: false
+			});
+			emailToast.toast('show');
+
+			emailToast.animate({'right':'10vh'},1000, (e)=>{
+				setTimeout(()=>{
+					emailToast.animate({'right':'-50vh'},1000);
+				}, 5000);			
+			});
 		});
 
 		name.val('');
 		email.val('');
 		message.val('');
-
-		emailToast.toast({
-			autohide: false
-		});
-		emailToast.toast('show');
-
-		emailToast.animate({'right':'10vh'},1000, (e)=>{
-			setTimeout(()=>{
-				emailToast.animate({'right':'-50vh'},1000);
-			}, 5000);			
-		});
-
-
 	});
 });
