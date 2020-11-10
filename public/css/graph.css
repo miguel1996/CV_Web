@@ -34,33 +34,23 @@ ul.timeline > li {
     30%  {box-shadow:0px 0px 8px 4px #0056b3;}
     40%  {box-shadow:0px 0px 0px 0px #0056b3;}
     100% {box-shadow:0px 0px 0px 0px #0056b3;}
-    /*0%   {border-width: 2px;}
-    15%  {border-width: 5.5px;}
-    30%  {border-width: 2px;}
-    45%  {border-width: 5.5px;}
-    60%  {border-width: 2px;}
-    100% {border-width: 2px;}*/
-    /*from {background: white;}
-    to {background: #0056b3;}*/
 }
 ul.timeline > li:before {
     animation-name: graphAnimation;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
+    animation-delay: 0s;
     content: ' ';
     background: white;
-    /*background: #0056b3;*/
     display: inline-block;
     position: absolute;
     border-radius: 50%;
     border: 3px solid #0056b3;
-    /*border: 1px solid #ffffff;*/
     right: -11px;
     width: 20px;
     height: 20px;
     z-index: 400;
-
     box-shadow:0px 0px 0px 0px #0056b3;
 }
 

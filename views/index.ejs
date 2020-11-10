@@ -108,7 +108,7 @@
                             <div class="col-md-12">                   
                                 <ul class="timeline">
                                     <% for(var i=0; i<data.timeline.length; i++) {%>
-                                        <li>
+                                        <li id="timeline<%=i%>">
                                             <div class="hide">
                                                 <div class="media">
                                                   <div class="media-body">
@@ -122,7 +122,7 @@
                                             
                                         </li>
                                     <% } %>
-                                    <li>
+                                    <li id="timeline<%=data.timeline.length%>">
                                         <span>Today&emsp;</span>
                                         <span class="float-right date"><span class="day">dd</span>/<span class="month">mm</span>/<span class="year">yyyy</span></span>
                                     </li>
