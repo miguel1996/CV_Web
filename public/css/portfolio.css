@@ -70,6 +70,7 @@ section .section-title {
 }
 
 .backside {
+    border: solid 1px #ffffff;
     position: absolute;
     top: 0;
     left: 0;
@@ -141,6 +142,7 @@ section .section-title {
 }
 
 .card{
+    border: solid 1px #262626;
     height: 30vh;
     background: #232323;
     border-radius: 0.5rem;
