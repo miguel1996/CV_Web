@@ -139,7 +139,7 @@
                     <h2 class="uppercase">&#60;Portfolio/&#62;</h2>
                     <div class="custom-container container">
                         <div class="row custom-row">
-                            <% for(var i=0; i<4; i++) {%>
+                            <% for(var i=0; i<4 && i<data.portfolio.length; i++) {%>
                                 <% if(i % 2 == 0){ %>
                                     </div>
                                     <div class="row custom-row">
@@ -149,26 +149,30 @@
                                     <div class="mainflip flip-0">
                                         <div class="frontside">
                                             <div class="card">
-                                                <div class="card-body text-center" style="background: url('img/dome.JPG');">
-                                                    <h4 class="card-title">ARDome</h4>
+                                                <div class="card-body text-center" style="background: url(<%= data.portfolio[i].img %>);">
+                                                    <h4 class="card-title"><%= data.portfolio[i].title %></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="backside">
                                             <div class="card">
                                                 <div class="card-body text-center">
-                                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                    <p class="card-text"><%= data.portfolio[i].description %></p>
                                                     <ul class="list-inline">
-                                                        <li class="list-inline-item">
-                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                                <img class="icon" src="img/icons/github.png" alt="Github">
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                                <img class="icon" src="img/icons/github.png" alt="Github">
-                                                            </a>
-                                                        </li>                                            
+                                                        <% if(data.portfolio[i].github != ''){ %>
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].github %>">
+                                                                    <img class="icon" src="img/icons/github.png" alt="Github">
+                                                                </a>
+                                                            </li>
+                                                        <% } %>
+                                                        <% if(data.portfolio[i].download != ''){ %>
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].download %>">
+                                                                    <img class="icon" src="img/icons/github.png" alt="Download">
+                                                                </a>
+                                                            </li>      
+                                                        <% } %>                                      
                                                     </ul>
                                                 </div>
                                             </div>
@@ -185,7 +189,7 @@
                     
                 </div>                
             </section> 
-            
+
             <section id="final" class="fade-in">
                 <div aria-live="polite" aria-atomic="true">
                   <div id="email-toast" class="custom-toast toast toast-fluid toast-primary">

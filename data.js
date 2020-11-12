@@ -51,14 +51,14 @@ const data = {
 				title: "ARDome",
 				description: "ARDome is a persuasive interface for inspiring pro-environmental behaviors, by leveraging Augmented Reality technology. This app was built through Unity and ARCore.",
 				github: "",
-				download: "",
+				download: "https://play.google.com/store/apps/details?id=com.tigerwhale.ardome",
 				img: "img/dome.JPG"
 			},
 			{
 				id: "easyEvent",
 				title: "easyEvent",
 				description: "easyEvent is an event scheduling platform on which the user is capable of creating and submiting custom forms. This is a group project from a lecture developed through Laravel and MySQL.",
-				github: "",
+				github: "https://github.com/miguel1996/easyEvent",
 				download: "",
 				img: "img/event2.jpg"
 			},
@@ -66,7 +66,7 @@ const data = {
 				id: "cv",
 				title: "Personal Website",
 				description: "This very own website was developed as a means to promote what I do best. It's a simple web page powered by a Node.JS server, coupled with Express and EJS.",
-				github: "",
+				github: "https://github.com/miguel1996/CV_Web",
 				download: "",
 				img: "img/second_cover_photo.png"
 			}
