@@ -1,7 +1,3 @@
-#team {
-    background: #eee;
-}
-
 .btn-primary:hover,
 .btn-primary:focus {    
     background-color: #0056b3;
@@ -11,7 +7,8 @@
 }
 
 .btn-primary {
-    margin-top: 45%;
+    font-weight: 600;
+    width: 10%;
     color: #fff;
     background-color: #0056b3;
     border-color: #0056b3;
@@ -105,18 +102,13 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
-    min-height: 312px;
-}
-
 .backside .card a {
     font-size: 18px;
     color: #0056b3 !important;
 }
 
 .backside .card .card-body{
-    padding: 0 5%;
+    padding: 0% 5%;
     font-size: 12pt;
     font-weight: 500;
 }
@@ -133,7 +125,7 @@ section .section-title {
     text-align:center;
     border-radius: 0 0 0.5rem 0.5rem;
     width: 100%;
-    padding: 5% 0;
+    padding: 3% 0;
     margin-bottom: 0;    
     color: #ffffff !important;
 }
@@ -159,15 +151,18 @@ section .section-title {
 }*/
 
 .card{
-    height: 38vh;
+    height: 30vh;
     background: #232323;
     border-radius: 0.5rem;
     position: relative;
 }
 
 .custom-container{
-    margin-top: 3vh;
-    margin-bottom: 25vh;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .list-inline{
@@ -176,5 +171,25 @@ section .section-title {
     margin-left:auto;
     margin-right:auto;
     position: absolute;
-    bottom:0;
+    bottom:0vh;
 }
+
+.custom-row{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.custom-col{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+/*#more{
+    font-size: 100pt;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    position: absolute;
+    bottom:20%;
+}*/
