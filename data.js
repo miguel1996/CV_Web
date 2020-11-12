@@ -19,30 +19,12 @@ const data = {
 				date: "21/10/2014",
 				description: "Conducted volunteering work in UMa's Student's Union. Assigned functions were student support in the main office HelpDesk, salesclerk in the Academic Stores, assistance for the preparation and execution of cultural events (Fado Concerts, Academic Festivities, etc) and website maintenance."
 			},
-			/*{
-				id: "graduation_bachelor",
-				title: "Graduation from Bachelor's",
-				date: "04/06/2018",
-				description: ""
-			},*/
-			/*{
-				id: "end_union",
-				title: "Concluded Volunteering in Student's Union",
-				date: "13/06/2018",
-				description: ""
-			},*/
 			{
 				id: "internship",
 				title: "Web Developer",
 				date: "01/08/2018",
 				description: "1 month Summer Internship Program, working as a Web Developer, in UMa's Student's Union. Responsabilities included development of the Madeiran Heritage website, and overall web maintenance and support."
 			},
-			/*{
-				id: "end_internship",
-				title: "End of Internship",
-				date: "31/08/2018",
-				description: ""
-			},*/
 			{
 				id: "master",
 				title: "Master's",
