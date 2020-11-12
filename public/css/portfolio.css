@@ -3,7 +3,7 @@
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus {    
     background-color: #0056b3;
     border-color: #0056b3;
     box-shadow: none;
@@ -11,6 +11,7 @@
 }
 
 .btn-primary {
+    margin-top: 45%;
     color: #fff;
     background-color: #0056b3;
     border-color: #0056b3;
@@ -114,24 +115,66 @@ section .section-title {
     color: #0056b3 !important;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
+.backside .card .card-body{
+    padding: 0 5%;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.backside .card .card-title{
     color: #0056b3 !important;
 }
 
-.frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.frontside .card .card-title{
+    position: absolute;
+    bottom: 0;
+    background: rgba(28, 28, 28, 0.5);   
+    z-index:2;
+    text-align:center;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 100%;
+    padding: 5% 0;
+    margin-bottom: 0;    
+    color: #ffffff !important;
 }
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    font-weight:600;
+    text-shadow: 1px 1px #262626;    
+}
+
+.card-body{
+    background-size:100% 100% !important;
+    border-radius: 0.5rem;
+    padding: 0;
+    overflow: visible;
+}
+
+/*.frontside .card .card-body img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}*/
 
 .card{
     height: 38vh;
     background: #232323;
     border-radius: 0.5rem;
+    position: relative;
 }
 
 .custom-container{
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 25vh;
+}
+
+.list-inline{
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    position: absolute;
+    bottom:0;
 }
