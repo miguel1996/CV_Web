@@ -244,3 +244,8 @@ footer{
 	border-radius:0 0 0.3rem 0.3rem;
 	background-color: #232323;
 }
+
+#shadow-test{
+	box-shadow: 5px 10px red;
+	border: 1px solid white;
+}
