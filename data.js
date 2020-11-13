@@ -3,7 +3,7 @@ const data = {
 		name: "Miguel Andrade",
 		career: "Software Developer",
 		spoken_languages: ["Portuguese", "English"],
-		skills: ["Git", "MySQL", "HTML5/CSS3", "Javascript/JQuery", "Node.JS", "PHP", "Laravel", "Python", "Django", "C#", "Unity", "Java", "Android Studio", "Processing"],
+		skills: ["Git", "MySQL", "HTML5/CSS3", "Javascript/JQuery", "Node.JS", "PHP", "Laravel", "Python", "Django", "C#", "Unity", "Java", "Android Studio"],
 		about: ["Hi, I'm Miguel, a Computer Engineering graduate mostly interested in Web-based applications.", "I'm a versatile, determined person, continuously acquiring new knowledge, to evolve both personally and professionally. I'm always eager for a challenge, and I'm never afraid to use the right tools for the job, regardless of my experience with them.", "Currently, I'm working as an Assistant Researcher in ITI/LARSyS, feel free to contact me through the form bellow, or any of my social media."],
 		cv_file: "",
 		timeline: [

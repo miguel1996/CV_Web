@@ -27,20 +27,20 @@ ul.timeline > li {
     text-align: right;
 }
 
-@keyframes graphAnimation {
+/*@keyframes graphAnimation {
     0%   {background: white;}
     10%  {background: #0056b3;}
     20%  {background: white;}
     30%  {background: #0056b3;}
     40%  {background: white;}
-    100% {background: white;}
+    100% {background: white;}*/
 }
 ul.timeline > li:before {
-    animation-name: graphAnimation;
+    /*animation-name: graphAnimation;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
-    animation-delay: 0s;
+    animation-delay: 0s;*/
     content: ' ';
     background: white;
     display: inline-block;
@@ -58,6 +58,10 @@ ul.timeline .date{
 	margin-right:2vw;
     position: absolute;
     right: -180px;
+}
+
+ul.timeline li:hover:before{
+    background-color: #0056b3;
 }
 
 ul.timeline li:hover .hide{
