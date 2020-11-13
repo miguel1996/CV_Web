@@ -68,7 +68,7 @@ const data = {
 				description: "This very own website was developed as a means to promote what I do best. It's a simple web page powered by a Node.JS server, coupled with Express and EJS.",
 				github: "https://github.com/miguel1996/CV_Web",
 				download: "",
-				img: "img/inception.png"
+				img: "img/site.png"
 			}
 		],
 		

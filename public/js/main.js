@@ -79,6 +79,5 @@ $(document).ready(function(){
 		obj.html(html);
 	}
 	setInterval(animateDots.bind(null, loading_dots), 500);	
-
 });
 
