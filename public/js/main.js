@@ -80,31 +80,33 @@ $(document).ready(function(){
 	}
 	setInterval(animateDots.bind(null, loading_dots), 500);	
 
+	let $shadow = $('.bullet');
+	/*$(document).on('mousemove', e => {
+		 $shadow.each(function(index, element){
+			let shadowMax = $(element).height();
+			//let shadowMax = 100000000000000;
+			let shadowMin = shadowMax * -1;
+			let shadowMidPoints = [$(element).offset().left + $(element).width() / 2, $(element).offset().top + $(element).height() / 2];
+			let factor = 0.25;
+			let shadowX = Math.min(shadowMax, Math.max(shadowMin, shadowMidPoints[0] - e.pageX)) * factor;
+		    let shadowY = Math.min(shadowMax, Math.max(shadowMin, shadowMidPoints[1] - e.pageY)) * factor;
+		    $(element).css('box-shadow', `${shadowX}px ${shadowY}px 20px 1px white`);
+		});	   
+	});*/
 
-	function getMousePosition(){
-		document.onmousemove = handleMouseMove;
-	    function handleMouseMove(event) {
-	        var eventDoc, doc, body;
-
-	        event = event || window.event; 
-
-	        if (event.pageX == null && event.clientX != null) {
-	            eventDoc = (event.target && event.target.ownerDocument) || document;
-	            doc = eventDoc.documentElement;
-	            body = eventDoc.body;
-
-	            event.pageX = event.clientX +
-	              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-	              (doc && doc.clientLeft || body && body.clientLeft || 0);
-	            event.pageY = event.clientY +
-	              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
-	              (doc && doc.clientTop  || body && body.clientTop  || 0 );
-	        }
-
-	        console.log(event.pageX + " " + event.pageY);
-	    }
-	}
-	getMousePosition();
+	$(document).on('mousemove', e => {
+		 $shadow.each(function(index, element){
+			let factorX = -0.005;
+			let factorY = -0.05;	
+			/*let factorX = 0.01;
+			let factorY = 0.01;*/
+			let position = $(element).offset();
+			let shadowX = (position.left - e.pageX) * factorX;
+			let shadowY = (position.top - e.pageY) * factorY;
+		    //$(element).css('box-shadow', `${shadowX}px ${shadowY}px 7px #0056b3`);
+		    $(element).css('box-shadow', `${shadowX}px ${shadowY}px 2px #0056b3 inset`);
+		});	   
+	});
 
 });
 

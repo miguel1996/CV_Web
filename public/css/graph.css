@@ -27,7 +27,7 @@ ul.timeline > li {
     text-align: right;
 }
 
-ul.timeline > li:before {
+ul.timeline > li > .bullet{
     content: ' ';
     background: white;
     display: inline-block;
@@ -46,8 +46,8 @@ ul.timeline .date{
     right: -180px;
 }
 
-ul.timeline li:hover:before{
-    background-color: #0056b3;
+ul.timeline li:hover .bullet{
+    /*background-color: #0056b3;*/
 }
 
 ul.timeline li:hover .hide{
@@ -82,3 +82,6 @@ ul.timeline li:hover .hide{
     padding-bottom: 0;
     padding-top: 0;
 }
+/*.bullet{
+    box-shadow: 5px 10px white;
+}*/

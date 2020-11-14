@@ -119,11 +119,14 @@
                                                 </div>
                                             </div> 
                                             <span><%= data.timeline[i].title %>&emsp;</span>
+                                            <span class="bullet"></span>
                                             <span class="float-right date"><%= data.timeline[i].date %></span>                                            
                                         </li>
                                     <% } %>
+                                    <!--<li id="timeline<%=data.timeline.length%>">-->
                                     <li id="timeline<%=data.timeline.length%>">
                                         <span>Today&emsp;</span>
+                                        <span class="bullet"></span>
                                         <span class="float-right date"><span class="day">dd</span>/<span class="month">mm</span>/<span class="year">yyyy</span></span>
                                     </li>
                                 </ul>
@@ -185,7 +188,6 @@
                         <div class="row custom-row">
                             <a class="btn btn-primary" target="_blank" href="<%= data.github + '?tab=repositories' %>" role="button">More</a>
                         </div>
-                        <p id="shadow-test">This is a shadow test</p>
                     </div>                    
                 </div>                
             </section> 
