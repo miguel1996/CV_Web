@@ -73,7 +73,7 @@ const data = {
 		],
 		
 		email: "miguel.nodemail@gmail.com",
-		linkedin: "",
+		linkedin: "https://www.linkedin.com/in/miguel-andrade-9819461bb/",
 		github: "https://github.com/miguel1996/"
 	}
 }
