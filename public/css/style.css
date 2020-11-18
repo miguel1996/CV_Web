@@ -8,10 +8,6 @@ body {
 	margin: 7.5vh 6vw 7.5vh 7vw;
 }
 
-hr{
-	background-color: #ffffff;
-}
-
 body, a{
 	color: #ffffff;
 }
@@ -42,6 +38,8 @@ path{
 }
 
 footer{
+	/*width: 100vw;*/
+	border-top: 1px solid white;
 	text-align:center;
 	font-size: 12pt;
 	padding-bottom: 5vh;
