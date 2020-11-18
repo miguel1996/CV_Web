@@ -1,157 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/graph.css">
-        <link rel="stylesheet" type="text/css" href="css/form.css">
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/graph.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/form.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
-        <title>Miguel Andrade</title>
-    </head>
+    <title>Miguel Andrade</title>
+</head>
 
-    <body data-spy="scroll" data-target="#side-nav" data-offset="10">         
-        <div id="side-nav">
-            <ul id="navbar" class="nav flex-column custom-nav">
-                <li class="nav-item custom-nav-item">
-                    <a class="nav-link active" href="#landing-page">01</a>
-                </li>
-                <li class="nav-item custom-nav-item">
-                    <a class="nav-link" href="#about">02</a>
-                </li>
-                <li class="nav-item custom-nav-item">
-                    <a class="nav-link" href="#portfolio">03</a>
-                </li>
-                <li class="nav-item custom-nav-item">
-                    <a class="nav-link" href="#final">04</a>
-                </li>
-            </ul>
-        </div>
-        <div id="main">
-            <section id="cover">
-                <img src="img/cover_photo.png" alt="Cover Photo" id="landing-page">
-                <nav id="custom-navbar" class="navbar navbar-expand-lg uppercase">          
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link" href="#about">About</a>
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                            <a class="nav-link" href="#final">Contacts</a>
-                        </div>
-                    </div>
-                </nav>
-                <div class="jumbotron half-jumbotron">
-                    <div id="title">
-                        <h1 id="hello-world" class="display-2"></h1>
-                        <h1 class="display-2"><span id="animated-cursor">_</span></h1>
-                    </div>
-                    <p class="lead custom-lead">&#123; "I'm <%=data.name%>" &#125;</p>                
-                    <p class="uppercase">( '<%=data.career%>' )</p>
-                </div>
-                <div id="social-media">
-                    <a href="<%= data.linkedin %>" target="_blank"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
-                    <a href="<%= data.github %>" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
-                </div>
-        	</section>    
-
-            <section id="about" class="flex-container fade-in">
-                <div class="jumbotron half-jumbotron flex-child">
-                    <h2 class="uppercase">&#60;About/&#62;</h2>
-                    <div class="json-mockup">
-                        <p class="json-mockup-bracket">&#123;</p>
-                        <div class="json-mockup-items">
-                            <p><span class="highlight">Name</span>: "<%=data.name%>",</p>
-                            <p><span class="highlight">Career</span>: "<%=data.career%>",</p>
-                            <p><span class="highlight">Spoken Languages</span>: [
-                                    <% for(var i=0; i<data.spoken_languages.length; i++) {%>
-                                        "<%= data.spoken_languages[i] %>"
-                                        <% if (i + 1 != data.spoken_languages.length) { %>
-                                            ,
-                                        <% } %>
-                                    <% } %>
-                                ],
-                            </p>
-                            <p><span class="highlight">Skills</span>: [
-                                    <% for(var i=0; i<data.skills.length; i++) {%>
-                                        "<%= data.skills[i] %>"
-                                        <% if (i + 1 != data.skills.length) { %>
-                                            ,
-                                        <% } %>
-                                    <% } %>
-                                ],
-                            </p>
-                            <p><span class="highlight">About</span>: "
-                                    <% for(var i=0; i<data.about.length; i++) {%>
-                                        <%= data.about[i] %>
-                                        <% if (i + 1 != data.about.length) { %>
-                                            <br><br>
-                                        <% } %>
-                                    <% } %>
-                                ",
-                            </p>
-                            <!--<p><span class="highlight">CV</span>: Available for download <a href="<%= data.cv_file %>" target="_blank" class="highlight">here</a>.</p>-->
-                        </div>
-                        <p class="json-mockup-bracket">&#125;</p>
+<body data-spy="scroll" data-target="#side-nav" data-offset="10">         
+    <div id="side-nav">
+        <ul id="navbar" class="nav flex-column custom-nav">
+            <li class="nav-item custom-nav-item">
+                <a class="nav-link active" href="#landing-page">01</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+                <a class="nav-link" href="#about">02</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+                <a class="nav-link" href="#portfolio">03</a>
+            </li>
+            <li class="nav-item custom-nav-item">
+                <a class="nav-link" href="#final">04</a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <section id="cover">
+            <img src="img/cover_photo.png" alt="Cover Photo" id="landing-page">
+            <nav id="custom-navbar" class="navbar navbar-expand-lg uppercase">          
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#final">Contacts</a>
                     </div>
                 </div>
-                <div id="graph-container" class="flex-child">               
-                    <div class="container mb-5">
-                        <div class="row">
-                            <div class="col-md-12">                   
-                                <ul class="timeline">
-                                    <% for(var i=0; i<data.timeline.length; i++) {%>
-                                        <li id="timeline<%=i%>">
-                                            <div class="hide">
-                                                <div class="media">
-                                                  <div class="media-body">
-                                                    <h5 class="mt-0 mb-1"><%= data.timeline[i].title %></h5>
-                                                    <ul>
-                                                        <% for(var j=0; j<data.timeline[i].description.length; j++) {%>
-                                                            <li><%= data.timeline[i].description[j] %></li>
-                                                        <% } %>
-                                                    </ul>
-                                                    <!--<p><%= data.timeline[i].description %></p>-->
-                                                  </div>
-                                                </div>
-                                            </div> 
-                                            <span><%= data.timeline[i].title %>&emsp;</span>
-                                            <span class="bullet"></span>
-                                            <span class="float-right date"><%= data.timeline[i].date %></span>                                            
-                                        </li>
-                                    <% } %>
-                                    <!--<li id="timeline<%=data.timeline.length%>">-->
-                                    <li id="timeline<%=data.timeline.length%>">
-                                        <span>Today&emsp;</span>
-                                        <span class="bullet"></span>
-                                        <span class="float-right date"><span class="day">dd</span>/<span class="month">mm</span>/<span class="year">yyyy</span></span>
-                                    </li>
-                                </ul>
-                                <div class="hide">
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
+            </nav>
+            <div class="jumbotron half-jumbotron">
+                <div id="title">
+                    <h1 id="hello-world" class="display-2"></h1>
+                    <h1 class="display-2"><span id="animated-cursor">_</span></h1>
                 </div>
-            </section>     
-            <section id="portfolio" class="fade-in pb-5">
-                <div class="jumbotron full-jumbotron">
-                    <h2 class="uppercase">&#60;Portfolio/&#62;</h2>
-                    <div class="custom-container container">
-                        <div class="row custom-row">
-                            <% for(var i=0; i<4 && i<data.portfolio.length; i++) {%>
-                                <% if(i % 2 == 0){ %>
+                <p class="lead custom-lead">&#123; "I'm <%=data.name%>" &#125;</p>                
+                <p class="uppercase">( '<%=data.career%>' )</p>
+            </div>
+            <div id="social-media">
+                <a href="<%= data.linkedin %>" target="_blank"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
+                <a href="<%= data.github %>" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
+            </div>
+        </section>    
+
+        <section id="about" class="flex-container fade-in">
+            <div class="jumbotron half-jumbotron flex-child">
+                <h2 class="uppercase">&#60;About/&#62;</h2>
+                <div class="json-mockup">
+                    <p class="json-mockup-bracket">&#123;</p>
+                    <div class="json-mockup-items">
+                        <p><span class="highlight">Name</span>: "<%=data.name%>",</p>
+                        <p><span class="highlight">Career</span>: "<%=data.career%>",</p>
+                        <p><span class="highlight">Spoken Languages</span>: [
+                            <% for(var i=0; i<data.spoken_languages.length; i++) {%>
+                            "<%= data.spoken_languages[i] %>"
+                            <% if (i + 1 != data.spoken_languages.length) { %>
+                            ,
+                            <% } %>
+                            <% } %>
+                            ],
+                        </p>
+                        <p><span class="highlight">Skills</span>: [
+                            <% for(var i=0; i<data.skills.length; i++) {%>
+                            "<%= data.skills[i] %>"
+                            <% if (i + 1 != data.skills.length) { %>
+                            ,
+                            <% } %>
+                            <% } %>
+                            ],
+                        </p>
+                        <p><span class="highlight">About</span>: "
+                            <% for(var i=0; i<data.about.length; i++) {%>
+                            <%= data.about[i] %>
+                            <% if (i + 1 != data.about.length) { %>
+                            <br><br>
+                            <% } %>
+                            <% } %>
+                            ",
+                        </p>
+                        <!--<p><span class="highlight">CV</span>: Available for download <a href="<%= data.cv_file %>" target="_blank" class="highlight">here</a>.</p>-->
+                    </div>
+                    <p class="json-mockup-bracket">&#125;</p>
+                </div>
+            </div>
+            <div id="graph-container" class="flex-child">               
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-md-12">                   
+                            <ul class="timeline">
+                                <% for(var i=0; i<data.timeline.length; i++) {%>
+                                <li id="timeline<%=i%>">
+                                    <div class="hide">
+                                        <div class="media">
+                                          <div class="media-body">
+                                            <h5 class="mt-0 mb-1"><%= data.timeline[i].title %></h5>
+                                            <ul>
+                                                <% for(var j=0; j<data.timeline[i].description.length; j++) {%>
+                                                <li><%= data.timeline[i].description[j] %></li>
+                                                <% } %>
+                                            </ul>
+                                            <!--<p><%= data.timeline[i].description %></p>-->
+                                        </div>
                                     </div>
-                                    <div class="row custom-row">
-                                <% } %>
+                                </div> 
+                                <span><%= data.timeline[i].title %>&emsp;</span>
+                                <span class="bullet"></span>
+                                <span class="float-right date"><%= data.timeline[i].date %></span>                                            
+                            </li>
+                            <% } %>
+                            <!--<li id="timeline<%=data.timeline.length%>">-->
+                                <li id="timeline<%=data.timeline.length%>">
+                                    <span>Today&emsp;</span>
+                                    <span class="bullet"></span>
+                                    <span class="float-right date"><span class="day">dd</span>/<span class="month">mm</span>/<span class="year">yyyy</span></span>
+                                </li>
+                            </ul>
+                            <div class="hide">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section id="portfolio" class="fade-in pb-5">
+            <div class="jumbotron full-jumbotron">
+                <h2 class="uppercase">&#60;Portfolio/&#62;</h2>
+                <div class="custom-container container">
+                    <div class="row custom-row">
+                        <% for(var i=0; i<4 && i<data.portfolio.length; i++) {%>
+                            <% if(i % 2 == 0){ %>
+                        </div>
+                        <div class="row custom-row">
+                            <% } %>
                             <div class="col-md-4 custom-col">
                                 <div class="image-flip" >
                                     <div class="mainflip flip-0">
@@ -168,18 +168,18 @@
                                                     <p class="card-text"><%= data.portfolio[i].description %></p>
                                                     <ul class="list-inline">
                                                         <% if(data.portfolio[i].github != ''){ %>
-                                                            <li class="list-inline-item">
-                                                                <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].github %>">
-                                                                    <img class="icon" src="img/icons/github.png" alt="Github">
-                                                                </a>
-                                                            </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].github %>">
+                                                                <img class="icon" src="img/icons/github.png" alt="Github">
+                                                            </a>
+                                                        </li>
                                                         <% } %>
                                                         <% if(data.portfolio[i].download != ''){ %>
-                                                            <li class="list-inline-item">
-                                                                <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].download %>">
-                                                                    <img class="icon" src="img/icons/download.png" alt="Download">
-                                                                </a>
-                                                            </li>      
+                                                        <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" target="_blank" href="<%= data.portfolio[i].download %>">
+                                                                <img class="icon" src="img/icons/download.png" alt="Download">
+                                                            </a>
+                                                        </li>      
                                                         <% } %>                                      
                                                     </ul>
                                                 </div>
@@ -201,46 +201,46 @@
                 <div aria-live="polite" aria-atomic="true">
                   <div id="email-toast" class="custom-toast toast toast-fluid toast-primary">
                     <div class="toast-wrapper">
-                    <div class="toast-header">Email Sent</div>
-                    
-                    <div class="toast-body">Thank you for contacting me. I'll get in touch with you as soon as possible!</div>
+                        <div class="toast-header">Email Sent</div>
+                        
+                        <div class="toast-body">Thank you for contacting me. I'll get in touch with you as soon as possible!</div>
                     </div>
-                  </div>
                 </div>
-                <div class="jumbotron full-jumbotron">
-                    <h2 class="uppercase">&#60;Contact Me/&#62;</h2> 
-                    <div class="container contact-form">
-                        <form id="custom-contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="name" type="text" name="txtName" class="form-control" placeholder="Name" value=""/>
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="email" type="email" name="txtEmail" class="form-control" placeholder="Email" value=""/>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message"/>
-                                    </div>
+            </div>
+            <div class="jumbotron full-jumbotron">
+                <h2 class="uppercase">&#60;Contact Me/&#62;</h2> 
+                <div class="container contact-form">
+                    <form id="custom-contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="name" type="text" name="txtName" class="form-control" placeholder="Name" value=""/>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea id="message" name="txtMsg" class="form-control" placeholder="Message" style="height: 150px;"></textarea>
-                                    </div>
+                                <div class="form-group">
+                                    <input id="email" type="email" name="txtEmail" class="form-control" placeholder="Email" value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message"/>
                                 </div>
                             </div>
-                        </form>
-                    </div>    
-                    <h3 class="highlight">Code compiling<span id="loading-dots">...</span> Will respond when possible!</h3>
-                </div>  
-            </section>
-            <footer class="fade-in">
-                <p>&copy;<span class="year">2020</span> <%=data.name%> - <%=data.career%></p>
-                <div>
-                    <a href="<%= data.linkedin %>" target="_blank"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
-                    <a href="<%= data.github %>" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
-                </div>
-            </footer>
-        </div>
-    </body>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea id="message" name="txtMsg" class="form-control" placeholder="Message" style="height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>    
+                <h3 class="highlight">Code compiling<span id="loading-dots">...</span> Will respond when possible!</h3>
+            </div>  
+        </section>
+        <footer class="fade-in">
+            <p>&copy;<span class="year">2020</span> <%=data.name%> - <%=data.career%></p>
+            <div>
+                <a href="<%= data.linkedin %>" target="_blank"><img class="icon" src="img/icons/linkedin.png" alt="Linkedin"></a>
+                <a href="<%= data.github %>" target="_blank"><img class="icon" src="img/icons/github.png" alt="Github"></a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
