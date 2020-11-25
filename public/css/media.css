@@ -1,0 +1,92 @@
+@media (min-width: 320px) and (max-width: 480px){
+	
+	section{
+		height: 95vh;
+	}
+
+	#cover .half-jumbotron{
+		text-align:center !important;
+		width: 90vw;
+		padding-top: 65vh;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	#cover #title{
+		padding-right: 6vw;
+	}
+
+	#cover > img{
+		content:url(../img/cover_photo_mobile.png);
+		height: 100%;
+		width: auto;
+		right: 0;
+		left:auto;
+	}
+
+	#cover #title h1{
+		font-size: 6vw !important;
+	}
+
+	#cover .lead{
+		font-size: 10pt !important;
+	}
+
+	#cover p{
+		font-size: 7pt !important;
+	}
+
+	#social-media{
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+	}
+
+	#social-media .icon{
+		display: inline;
+	}
+
+	.nav-link{
+		font-size: 10pt;
+		padding-right: 1.5rem;
+	}
+
+	#custom-navbar{
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		vertical-align: middle;
+		margin: 0;	
+		padding: 0;
+	}
+
+	#custom-navbar a{
+		margin-left: 0;
+		width: 100%;
+	}
+
+	@keyframes showMenu{
+		from {opacity: 0;}
+  		to {opacity: 1;}
+	}
+
+	.navbar-nav{
+		overflow: none;
+		animation-name: showMenu;
+  		animation-duration: 1s;
+		padding-top: 40vh;
+		width: 100vw;
+		height: 100vh;
+		background-color: #232323;
+		z-index: 900;
+	}
+
+	#menu[aria-expanded="true"]{
+		overflow: hidden;
+	}
+
+	#menu{
+		display: block;
+	}
+}

@@ -108,6 +108,7 @@ footer{
 }
 
 #cover > img{
+	content:url(../img/cover_photo.png);
 	width: 100vw;
 	position: absolute;
 	top: 0px;
@@ -184,7 +185,7 @@ footer{
 
 .custom-carousel p, h5{
 	font-weight: 500;
-	z-index: 1000;
+	z-index: 500;
 	position:relative;
 }
 
@@ -244,4 +245,13 @@ footer{
 .custom-toast .toast-body{
 	border-radius:0 0 0.3rem 0.3rem;
 	background-color: #232323;
+}
+
+#menu{
+	z-index: 100;
+	color:white;
+	display: none;
+	position: absolute;
+	top: 5vh;
+	right: 5vw;
 }

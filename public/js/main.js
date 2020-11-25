@@ -93,5 +93,11 @@ $(document).ready(function(){
 		});	   
 	});
 
+	/*var menu = $("#menu").click(
+		function (){
+			$("#navbarNavAltMarkup.collapse").addClass( ".show" );
+		}
+	);*/
+
 });
 
